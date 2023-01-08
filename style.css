@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('/bg.jpg') center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    min-height: 75vh;
+    width: 70vh;
+}
+
+.container .header {
+    background-color: #031323;
+    text-align: center;
+    min-height: 30vh;
+}
+
+.container .header h2 {
+    padding: 25px;
+    color: white;
+}
+
+.container .header input {
+    width: 86px;
+    height: 55px;
+    background-color: #021524;
+    border: 1px solid rgba(255, 255, 255, 0.458);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+::placeholder {
+    position: absolute;
+    font-size: 10px;
+    padding: 20px 10px; 
+    font-style: italic;
+}
+
+input:focus::placeholder {
+    color: transparent
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+                    
+
+.container .header input:focus {
+    /* border-color: inherit;
+    box-shadow: none; */
+    outline: 0;
+}
+.container .header button {
+    display:flex ;
+    margin-left: 192px;
+    margin-top: 20px;
+    padding: 5px 17px;
+    font-family: 'Inter', sans-serif;
+    border: 1px;
+    border-radius: 4px;
+    color: black;
+    background-color: white
+}
+
+.container .header button:hover {
+    cursor:pointer;
+    font-weight: bold;
+    background-color: #a1a1d9;
+}
+
+.hero{
+    min-height: 50vh;
+    background-color: #1f2937 ;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.hero .length {
+    background-color:#273549;  
+    height: 13vh;
+}
+
+.hero h5 {
+    text-align: center;
+    padding: 20px 0px;
+    color: #a1a1d9;
+    font-size: 1em;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.755);
+    font-size: 12px;
+}
+
+.hero .volume {
+    background-color:#273549;    
+    height: 13vh;
+    margin: 15px 0px;
+
+}
+
+.hero .mass {
+    background-color:#273549;    
+    height: 13vh;
+}
