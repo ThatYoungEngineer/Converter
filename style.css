@@ -7,87 +7,97 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: url('/bg.jpg') center;
+    font-family: 'Inter', sans-serif;
+    background: url('/bg.jpg');
     background-size: cover;
-    overflow: hidden;
 }
 
 .container {
-    background-color: white;
-    min-height: 75vh;
-    width: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
 }
 
 .container .header {
     background-color: #031323;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     min-height: 30vh;
+    width: 100%;
 }
 
 .container .header h2 {
-    padding: 25px;
+    margin: 10px 0px 30px 0px;
     color: white;
 }
 
 .container .header input {
-    width: 86px;
-    height: 55px;
-    background-color: #021524;
-    border: 1px solid rgba(255, 255, 255, 0.458);
+    width: 40%;
+    background-color: #031323;
+    border: 1px solid rgb(252, 0, 0);
+    transition: .3s all;
+    border-radius: 5px;
     color: white;
+    padding: 15px 2px 15px 0px;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    font-size: 45px;
-    border-radius: 5px;
+    font-size: 3rem;
     font-weight: bolder;
+    margin-bottom: 25px;
 }
 
-::placeholder {
-    position: absolute;
-    font-size: 10px;
-    padding: 20px 10px; 
+.num__input::-webkit-input-placeholder {
+    padding-right: 5px;
+    font-size: 30px;
     font-style: italic;
+    padding: 10px 0px 0px 0px;
 }
 
-input:focus::placeholder {
-    color: transparent
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+.num__input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
                     
-
-.container .header input:focus {
-    /* border-color: inherit;
-    box-shadow: none; */
+.container .header .num__input:focus {
     outline: 0;
+    border-color: rgb(0, 255, 234);
+    transition: .5s all;
 }
-.container .header button {
-    display:flex ;
-    margin-left: 192px;
-    margin-top: 20px;
-    padding: 5px 17px;
+
+.container .header .num__input:focus::placeholder {
+    color: transparent;
+}
+
+.container .header .btn__convert {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 10%;
+    padding: 5px 40px;
+    margin-bottom: 10px ;
     font-family: 'Inter', sans-serif;
     border: 1px;
-    border-radius: 4px;
+    border-radius: 5px;
     color: black;
     background-color: white
 }
 
 .container .header button:hover {
     cursor:pointer;
-    font-weight: bold;
-    background-color: #a1a1d9;
+    background-color: #09a8cf;
+    color: white;
+    transition: .3s all;
 }
 
 .hero{
+    width: 100%;
     min-height: 50vh;
     background-color: #1f2937 ;
     padding: 25px 15px;
